@@ -1,0 +1,50 @@
+
+<ul class="metismenu" id="menu">
+    <li>
+        <a href="{% url 'dashAd' %}" class="has-arrow">
+            <div class="parent-icon"><i class='bx bx-home-circle'></i>
+            </div>
+            <div class="menu-title">Dashboard Admin</div>
+        </a>
+        
+    </li>
+    <li>
+        <a href="javascript:;" class="has-arrow">
+            <div class="parent-icon"><i class="bx bx-category"></i>
+            </div>
+            <div class="menu-title">Taches</div>
+        </a>
+        <ul>
+            <li> <a href="{% url 'SaveTacheAd' %}"><i class="bx bx-right-arrow-alt"></i>création des taches </a>
+            </li>
+            <li> <a href="{% url 'ListeTacheAd' %}"><i class="bx bx-right-arrow-alt"></i>liste des taches</a>
+            </li>
+           
+        </ul>
+    </li>
+    
+    <li>
+        <a href="{% url 'profileAd' %}" class="has-arrow">
+            <div class="parent-icon"><i class="bx bx-category"></i>
+            </div>
+            <div class="menu-title">Profile</div>
+        </a>
+        
+    </li>
+
+    <li>
+        <a href="javascript:;" class="has-arrow">
+            <div class="parent-icon"><i class="bx bx-category"></i>
+            </div>
+            <div class="menu-title">Atribution des Comptes</div>
+        </a>
+        <ul>
+            <li> <a href="{% url 'register' %}"><i class="bx bx-right-arrow-alt"></i>création d'un comptes </a>
+            </li>
+            <li> <a href="{% url 'ListeCompte' %}"><i class="bx bx-right-arrow-alt"></i>liste des comptes</a>
+            </li>
+           
+        </ul>
+    </li>
+    
+</ul>

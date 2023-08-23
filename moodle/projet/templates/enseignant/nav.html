@@ -1,0 +1,37 @@
+
+<ul class="metismenu" id="menu">
+    <li>
+        <a href="{% url 'dashEn' %}" class="has-arrow">
+            <div class="parent-icon"><i class='bx bx-home-circle'></i>
+            </div>
+            <div class="menu-title">Dashboard Enseignant</div>
+        </a>
+        
+    </li>
+    <li>
+        <a href="javascript:;" class="has-arrow">
+            <div class="parent-icon"><i class="bx bx-category"></i>
+            </div>
+            <div class="menu-title">Taches</div>
+        </a>
+        <ul>
+            <li> <a href="{% url 'SaveTacheEn' %}"><i class="bx bx-right-arrow-alt"></i>création des taches </a>
+            </li>
+            <li> <a href="{% url 'ListeTacheEn' %}"><i class="bx bx-right-arrow-alt"></i>liste des taches</a>
+            </li>
+           
+        </ul>
+    </li>
+    
+
+
+    <li>
+        <a href="{% url 'profileEn' %}" class="has-arrow">
+            <div class="parent-icon"><i class="bx bx-category"></i>
+            </div>
+            <div class="menu-title">Profile</div>
+        </a>
+        
+    </li>
+    
+</ul>

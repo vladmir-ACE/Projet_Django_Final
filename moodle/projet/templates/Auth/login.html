@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet"  href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+
+
+        <style>
+         body{
+            
+             background-image: url("{% static 'bg/register.svg' %}");
+             background-repeat: no-repeat;
+             background-size: cover;
+            height: 700px;
+         }
+    
+    </style>
+</head>
+<body>
+
+
+    <div class="d-flex justify-content-center align-item-center">
+
+        <div class="card justify-item-center" style="width: 40rem; margin-top:4%; padding:3%;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Connectez vous</h5><br>
+              
+              <form action="" method="POST" novalidate>
+                {% csrf_token %}
+
+                {{form.as_p}}
+
+                
+                <div class="row">
+                    <input class="btn btn-primary btn-block" type="submit" value="Connection">
+                </div>
+
+                <a href="{% url 'register' %}">Pas de compte ? créer un compte</a>
+               
+               </form>
+            </div>
+          </div>
+
+    </div>
+    
+    
+</body>
+</html>

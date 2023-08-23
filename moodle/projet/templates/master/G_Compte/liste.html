@@ -1,0 +1,38 @@
+{% extends "master/dashboard.html" %}
+
+{% block content %}
+
+<h1 class="text-center">Liste des Comptes</h1>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nom</th>
+        <th scope="col">prenom</th>
+        <th scope="col">username</th>
+        <th scope="col">role</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in Users %}
+      <tr>
+        
+        <td>{{item.last_name}}</td>
+        <td>{{item.first_name}}</td>
+        <td>{{item.username}}</td>
+        <td>{{item.role}}</td>
+        <td><span> <a href="{% url 'UpdateCompte' item.id %}" class="btn btn-warning"> &#9998; </a></span> <span><a href="{% url 'DeleteCompte' item.id %}"class="btn btn-danger"> &#128465;</a></span></td>
+
+        
+      </tr>
+      {% endfor %}
+
+      
+    </tbody>
+  </table>
+
+
+
+
+{% endblock %}
